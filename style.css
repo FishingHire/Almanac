@@ -1,25 +1,74 @@
 body {
 	background-color: #eeeeee;
 	font-size: 16px;
+	background-image: url(https://www.fishinghire.com/wp-content/uploads/2015/04/Fish-HD-opaque.jpg?id=4696);
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 #input {
-	max-width:1140px;
-	margin: 0 auto;
-	margin-top: 15%;
+ 	background-color: rgba(0,0,0,0.6);
+	padding: 50px;
 }
 
-input, button {
-	width: 30%;
-	margin-left: 1.3%;
-	margin-right: 1.3%;
+#inputs {
+	max-width:1140px;
+	margin: 10 auto;
+
+}
+
+#spacing {
+	margin-bottom: 10px;
+}
+
+#output {
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100%;
 	padding-left: 10px;
+	margin-top: 5px;	
+	margin-bottom: 5px;
 	height:50px;
 	border-radius:5px;
 	border: 1px solid #eeeeee;
 }
 
 button {
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 5px;	
+	margin-bottom: 5px;
+	height:50px;
+	border-radius:5px;
+	border: none;
+}
+
+#heading {
+	text-align: center;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+.heading {
+	text-align: center;
+	color: #ffffff;
+	font-weight: 100;
+}
+
+#goodFairBad {
+	height:30px;
+	color: #ffffff;
+	font-weight: 100;
+	text-decoration: underline;
+}
+
+#submit {
 	background-color: #2fdab8;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -31,4 +80,15 @@ button {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 300;
+	color: #ffffff;
+}
+
+.outputData {
+	padding-top:15px;
+}
+
+#temp, #wind, #weather, #waterTemp, #precip, #swell {
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
 }

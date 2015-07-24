@@ -1,22 +1,70 @@
 <html>
 <head>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="functions.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 </head>
 
 <body>
 
-	<div id="input">
-	
-	<input type="text" id="city" placeholder="Enter City (ex. Boston)"/>
-	<input type="text" id="state" placeholder="Enter State (ex. MA)" />
 
-	<button type="submit" id="submit">Check Fishing Status</button>
+	<div class="row" id="input">
+
+		<div id="inputs">
+	        <div class="col-md-4" id="spacing">
+	        <input type="text" id="city" placeholder="Enter City (ex. Boston)"/>
+	        </div>
+	        <div class="col-md-4" id="spacing">
+	        <input type="text" id="state" placeholder="Enter State (ex. MA)" />
+	        </div>
+	        <div class="col-md-4" id="spacing">
+	        <button type="submit" id="submit">Check Fishing Status</button>
+	        </div>
+        </div>
+  	</div>
+
+ 	<div class="col-md-12" id="heading">
+ 		<h2 id="goodFairBad"></h2>
+	</div>
+
+	<div class="row" id="output">
+
+		<div class="col-md-4">
+			<h2 class="heading">Temperature</h2>
+				<div id="temp"></div>
+        </div>
+
+        <div class="col-md-4">
+     		<h2 class="heading">Wind Speed</h2>
+     			<div id="wind"></div>
+        </div>
+
+        <div class="col-md-4">
+        	<h2 class="heading">Weather</h2>
+        		<div id="weather"></div>
+        </div>
 
 	</div>
 
-	<div id="output">
+	<div class="row" id="output">
+
+		<div class="col-md-4">
+			<h2 class="heading">Water Temperature</h2>
+				<div id="waterTemp"></div>
+        </div>
+
+        <div class="col-md-4">
+     		<h2 class="heading">Precipitation</h2>
+     			<div id="precip"></div>
+        </div>
+
+        <div class="col-md-4">
+        	<h2 class="heading">Swell Height</h2>
+        		<div id="swell"></div>
+        </div>
 
 	</div>
 

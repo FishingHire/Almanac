@@ -38,7 +38,14 @@ function getWater() {
 function fishingGrader() {
 
 	rating = 0;
-	$('#output').empty();
+	$('#results').empty();
+	$('#temp').empty();
+	$('#wind').empty();
+	$('#weather').empty();
+	$('#goodFairBad').empty();
+	$('#waterTemp').empty();
+	$('#precip').empty();
+	$('#swell').empty();
 
 	// Wind Speed
 	if ( windSpeed <= 10 ) {
@@ -78,17 +85,25 @@ function fishingGrader() {
 	rating = rating / 4
 	
 	if ( rating >= 3 ) {
-		$('#output').append("<br><h1 id='results'>Today is a Good day to go fishing</h1>");
+		$('#goodFairBad').append("<h1 id='results'>Today is a Good day to go fishing</h1>");
 	} else if ( rating < 3 && rating >= 2 ) {
-		$('#output').append("<br><h1 id='results'>Today is a Fair day to go fishing</h1>");
+		$('#output').append("<h1 id='results'>Today is a Fair day to go fishing</h1>");
 	} else {
-		$('#output').append("<br><h1 id='results'>Today is a Bad day to go fishing</h1>");
+		$('#output').append("<h1 id='results'>Today is a Bad day to go fishing</h1>");
 	}
 
 	console.log(rating);
 
-	$('#output').append('<br><br>Here is everything you want to know:<br>Air Temp: ' + airTemp + '<br>Water Temp: ' + waterTemp + '<br>Wind Speed (mph): ' + windSpeed + '<br>Weather Summary: ' + weather + '<br>Precip (inches): ' + precipInches + '<br>Swell (ft): ' + swellFeet);
+	$('#temp').append('<br><div class="outputData">' + airTemp + '</div>');
+	$('#wind').append('<br><div class="outputData">' + windSpeed + '</div>');
+	$('#weather').append('<br><div class="outputData">' + weather + '</div>');
+	$('#waterTemp').append('<br><div class="outputData">' + waterTemp + '</div>');
+	$('#precip').append('<br><div class="outputData">' + precipInches + '</div>');
+	$('#swell').append('<br><div class="outputData">' + swellFeet + '</div>');
+
+
+	//$('#output').append('<br><br>Here is everything you want to know:<br>Air Temp: ' + airTemp + '<br>Water Temp: ' + waterTemp + '<br>Wind Speed (mph): ' + windSpeed + '<br>Weather Summary: ' + weather + '<br>Precip (inches): ' + precipInches + '<br>Swell (ft): ' + swellFeet);
 		  
-		  $('#output').append('<br><img src="' + weatherIconImg +'"><br>');
+	//$('#output').append('<br><img src="' + weatherIconImg +'"><br>');
 
 }
