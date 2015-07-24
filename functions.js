@@ -78,7 +78,7 @@ function fishingGrader() {
 	rating = rating / 4
 	
 	if ( rating >= 3 ) {
-		$('#output').append("<br>Today is a Good day to go fishing");
+		$('#output').append("<br><h1 id='results'>Today is a Good day to go fishing</h1>");
 	} else if ( rating < 3 && rating >= 2 ) {
 		$('#output').append("Today is a Fair day to go fishing");
 	} else {
