@@ -80,9 +80,9 @@ function fishingGrader() {
 	if ( rating >= 3 ) {
 		$('#output').append("<br><h1 id='results'>Today is a Good day to go fishing</h1>");
 	} else if ( rating < 3 && rating >= 2 ) {
-		$('#output').append("Today is a Fair day to go fishing");
+		$('#output').append("<br><h1 id='results'>Today is a Fair day to go fishing</h1>");
 	} else {
-		$('#output').append("Today is a Bad day to go fishing");
+		$('#output').append("<br><h1 id='results'>Today is a Bad day to go fishing</h1>");
 	}
 
 	console.log(rating);
